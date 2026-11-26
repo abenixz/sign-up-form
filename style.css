@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: row-reverse;
+    font-family: "Helvetica", "Arial", sans-serif;
+
+
+}
+
+header {
+    padding: 20px 0px;
+}
+
+header p {
+    color: #6c6c6c;
+}
+
+.form-image {
+    width: 50vw;
+    min-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.form-image img {
+    width: 600px;
+    height: auto;
+    margin-top: 30%;
+}
+
+.form-image p {
+    color: #464545;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.form-image a {
+    text-decoration: underline;
+    text-decoration: none;
+    color: #8535e0;
+
+}
+
+.form-container {
+    width: 50vw;
+    height: 100vh;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.form-area {
+    max-width: 500px;
+    min-width: 400px;
+    margin-bottom: 15vh;
+    padding: 50px 30px;
+
+
+}
+
+.form-row {
+    padding: 10px;
+}
+
+.logo-area {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-area>img {
+    width: 70px;
+    height: auto;
+    margin-left: 25px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='password'] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row {
+    display: flex;
+    gap: 5px;
+}
+
+input {
+    box-shadow: 0px 2px 5px rgb(184, 183, 183)
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:focus {
+    border-color: #0066ff;
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.25);
+    background-color: #f8fbff;
+}
+
+.password-note {
+    padding: 15px 30px;
+
+}
+
+.password-note li {
+    list-style-type: disc;
+    font-size: 15px;
+    color: #7f7f7f;
+
+}
+
+.btn {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    border: none;
+
+    border-radius: 5px;
+    background: #000;
+
+}
+
+.btn:hover {
+    background: rgb(53, 53, 53);
+}
+
+
+.btn-container p {
+    color: #464545;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.btn-container a {
+    text-decoration: none;
+    color: #171717;
+}
+
+.btn-container a:hover {
+    text-decoration: underline;
+    color: #000000;
+}

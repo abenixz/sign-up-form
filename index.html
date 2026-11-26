@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zelan Travel</title>
+    <title>Zelan Travel - Sign Up </title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <div class="form-container">
+
+        <div class="logo-area">
+            <img class="logo" src="logo.png" alt="zelan travel logo">
+        </div>
+
+        <div class="form-area">
+            <header>
+                <h2>Create an account</h2>
+                <p>Let's get started with your account</p>
+            </header>
+            <form action="#">
+                <div class="form-row">
+                    <div class="form-row-child">
+                        <label for="fname" class="input-label">First Name</label>
+                        <input id="fname" name="fname" type="text" required />
+                    </div>
+                    <div class="form-row-child">
+                        <label for="lname" class="input-label">Last Name</label>
+                        <input id="lname" name="lname" type="text" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-row-child">
+                        <label for="uemail" class="input-label">Email</label>
+                        <input id="uemail" name="email" type="email" placeholder="bob@zelantravel.com" required />
+                    </div>
+                    <div class="form-row-child">
+                        <label for="pnumber" class="input-label">Phone Number</label>
+                        <input id="pnumber" name="phone" type="tel" autocomplete="tel-country-code"
+                            placeholder="+251 91 123 4567" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-row-child">
+                        <label for="password" class="input-label">Password</label>
+                        <input id="password" name="password" type="password" required
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_])\S{8,}$" />
+                    </div>
+                    <div class="form-row-child">
+                        <label for="password" class="input-label">Confirm Password</label>
+                        <input id="password" name="password" type="password" required />
+                    </div>
+                </div>
+
+                <ul class="password-note">
+                    <li>At list 8 characters</li>
+                    <li>One lowercase character</li>
+                    <li>One uppercase character</li>
+                    <li>One number</li>
+                    <li>One special charater</li>
+                </ul>
+                <div class="btn-container">
+                    <button class="btn">Create Account</button>
+                    <p>Already have an account? <a href="#">Login</a></p>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="form-image">
+        <img src="form_image.png" alt="">
+        <p>Image by <a
+                href="https://dribbble.com/shots/25848653-Fernwayer-Travel-Marketplace-App-UI?utm_source=Clipboard_Shot&utm_campaign=saverchenko&utm_content=Fernwayer%20%E2%80%93%20Travel%20Marketplace%20App%20UI&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=saverchenko&utm_content=Fernwayer%20%E2%80%93%20Travel%20Marketplace%20App%20UI&utm_medium=Social_Share">Ivan
+                Saverchenko</a> on Dribbble.</p>
+
+    </div>
+
+
 </body>
+
 </html>
